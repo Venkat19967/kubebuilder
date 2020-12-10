@@ -136,7 +136,7 @@ func (c cli) bindInit(ctx plugin.Context, cmd *cobra.Command) {
 	}
 
 	cfg := internalconfig.New(internalconfig.DefaultPath)
-	fmt.Printf("\n\n#############hello\n\n")
+	fmt.Printf("\n\n#############%s\n\n", c.projectVersion)
 	cfg.Version = c.projectVersion
 
 	subcommand := initPlugin.GetInitSubcommand()
